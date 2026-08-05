@@ -1,0 +1,1137 @@
+{
+  "defaults": {
+    "timeout_seconds": 30,
+    "check_interval": "weekly",
+    "user_agent": "CEMS-Regulation-Monitor/1.0 (+regulatory research)"
+  },
+  "sources": [
+    {
+      "id": "src-001",
+      "name": "http://cdn.cseindia.org/userfiles/cems-the-ultimate-tool-for-emision-regulation.pdf",
+      "url": "http://cdn.cseindia.org/userfiles/cems-the-ultimate-tool-for-emision-regulation.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "cdn.cseindia.org"
+      ]
+    },
+    {
+      "id": "src-002",
+      "name": "https://air.emb.gov.ph/laws-policies-for-air-quality-management/",
+      "url": "https://air.emb.gov.ph/laws-policies-for-air-quality-management/",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "air.emb.gov.ph"
+      ]
+    },
+    {
+      "id": "src-003",
+      "name": "https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf 尚未完成下載",
+      "url": "https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "air.emb.gov.ph"
+      ]
+    },
+    {
+      "id": "src-004",
+      "name": "https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may2016-2.pdf",
+      "url": "https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may2016-2.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "air.emb.gov.ph"
+      ]
+    },
+    {
+      "id": "src-005",
+      "name": "https://air.emb.gov.ph/wp-content/uploads/2021/11/EMB-MC-2021-14-Signed.pdf 尚未完成下載",
+      "url": "https://air.emb.gov.ph/wp-content/uploads/2021/11/EMB-MC-2021-14-Signed.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "air.emb.gov.ph"
+      ]
+    },
+    {
+      "id": "src-006",
+      "name": "Regulatory Framework: While state-based, these codes are frequently used to meet national environmental obligations, often aligned with NEPM (National Environment Protection Measures) guidelines.",
+      "url": "https://apexioindustrial.com.au/blogs/news/continuous-emissions-monitoring-cems-and-iecex-atex-stack-gas-detectors-in-australia",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "apexioindustrial.com.au"
+      ]
+    },
+    {
+      "id": "src-007",
+      "name": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/ferrous-metals-processing-industry BAT reference documents “Ferrous Metals Processing Industry”",
+      "url": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/ferrous-metals-processing-industry",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "bureau-industrial-transformation.jrc.ec.europa.eu"
+      ]
+    },
+    {
+      "id": "src-008",
+      "name": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/monitoring-emissions-air-and-water-ied-installations-0 BAT reference documents “Monitoring of Emissions to Air and Water from IED Installations”",
+      "url": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/monitoring-emissions-air-and-water-ied-installations-0",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "bureau-industrial-transformation.jrc.ec.europa.eu"
+      ]
+    },
+    {
+      "id": "src-009",
+      "name": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime-and-magnesium-oxide BAT reference documents “Ferrous Metals Processing Industry”",
+      "url": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime-and-magnesium-oxide",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "bureau-industrial-transformation.jrc.ec.europa.eu"
+      ]
+    },
+    {
+      "id": "src-010",
+      "name": "https://cda.gov.ph/wp-content/uploads/2021/11/MC-2021-14-OG.pdf",
+      "url": "https://cda.gov.ph/wp-content/uploads/2021/11/MC-2021-14-OG.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "cda.gov.ph"
+      ]
+    },
+    {
+      "id": "src-011",
+      "name": "https://cems-legacy.doe.gov.my/cems_consultant/",
+      "url": "https://cems-legacy.doe.gov.my/cems_consultant/",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "cems-legacy.doe.gov.my"
+      ]
+    },
+    {
+      "id": "src-012",
+      "name": "https://cems.cpcb.gov.in/",
+      "url": "https://cems.cpcb.gov.in/",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "cems.cpcb.gov.in"
+      ]
+    },
+    {
+      "id": "src-013",
+      "name": "https://cleanairasia.org/sites/default/files/BAQ%20Presentations/Day%201/1400_Breakout%20Sessions/Track%202%20-%20Strengthening%20Emission%20Standards%20for%20Coal-Fired%20Power%20Plants%20and%20Polluting%20Industries%20(Coal%20Session%20Co",
+      "url": "https://cleanairasia.org/sites/default/files/BAQ%20Presentations/Day%201/1400_Breakout%20Sessions/Track%202%20-%20Strengthening%20Emission%20Standards%20for%20Coal-Fired%20Power%20Plants%20and%20Polluting%20Industries%20(Coal%20Session%20Community%20of%20Practice",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "cleanairasia.org"
+      ]
+    },
+    {
+      "id": "src-014",
+      "name": "https://cleanairasia.org/sites/default/files/BAQ%20Presentations/Day%201/1400_Breakout%20Sessions/Track%202%20-%20Strengthening%20Emission%20Standards%20for%20Coal-Fired%20Power%20Plants%20and%20Polluting%20Industries%20(Coal%20Session%20Co",
+      "url": "https://cleanairasia.org/sites/default/files/BAQ%20Presentations/Day%201/1400_Breakout%20Sessions/Track%202%20-%20Strengthening%20Emission%20Standards%20for%20Coal-Fired%20Power%20Plants%20and%20Polluting%20Industries%20(Coal%20Session%20Community%20of%20Practice)/PRIORITIES%20AND%20INITIATIVES%20TOWARDS%20STR_Jundy%20Del%20Socorro.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "cleanairasia.org"
+      ]
+    },
+    {
+      "id": "src-015",
+      "name": "https://cpcb.nic.in/ocems-complete/ 印度中央官方OCEMS Information",
+      "url": "https://cpcb.nic.in/ocems-complete/",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "cpcb.nic.in"
+      ]
+    },
+    {
+      "id": "src-016",
+      "name": "https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf",
+      "url": "https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "cpcb.nic.in"
+      ]
+    },
+    {
+      "id": "src-017",
+      "name": "https://developmentevidence.3ieimpact.org/search-result-details/impact-evaluation-repository/continuous-emissions-monitoring-systems-cems-in-india/8964",
+      "url": "https://developmentevidence.3ieimpact.org/search-result-details/impact-evaluation-repository/continuous-emissions-monitoring-systems-cems-in-india/8964",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "developmentevidence.3ieimpact.org"
+      ]
+    },
+    {
+      "id": "src-018",
+      "name": "https://dpcccems.nic.in/public 德黑里監測情形",
+      "url": "https://dpcccems.nic.in/public",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "dpcccems.nic.in"
+      ]
+    },
+    {
+      "id": "src-019",
+      "name": "https://ehssaral.com/ehsshala/industry-categorization-india-red-orange-green-white-blue",
+      "url": "https://ehssaral.com/ehsshala/industry-categorization-india-red-orange-green-white-blue",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "ehssaral.com"
+      ]
+    },
+    {
+      "id": "src-020",
+      "name": "Maintenance and Auditing: Mandatory ongoing maintenance and audits (e.g., RATA - Relative Accuracy Test Audits) are required to maintain certification.",
+      "url": "https://ektimo.com.au/products-equipment/cems-continuous-emission-monitoring-systems/",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "ektimo.com.au"
+      ]
+    },
+    {
+      "id": "src-021",
+      "name": "Australia’s CEMS code, primarily governed by state regulators like the WA Department of Water and Environmental Regulation, establishes strict requirements for designing, installing, certifying, and maintaining continuous emission monitorin",
+      "url": "https://ektimo.com.au/wp-content/uploads/2025/03/Technical-capability-CEMS-250301.pdf",
+      "kind": "document",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "ektimo.com.au"
+      ]
+    },
+    {
+      "id": "src-022",
+      "name": "https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installation%20of%20ocems.pdf",
+      "url": "https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installation%20of%20ocems.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "environment.rajasthan.gov.in"
+      ]
+    },
+    {
+      "id": "src-023",
+      "name": "https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS_02.08.2017.pdf",
+      "url": "https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS_02.08.2017.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "environment.rajasthan.gov.in"
+      ]
+    },
+    {
+      "id": "src-024",
+      "name": "https://environment.rajasthan.gov.in/content/environment/en/rajasthan-state-pollution-control-board/information/OnlineMonitoring.html Online Monitoring相關文件下載和軟體登入口",
+      "url": "https://environment.rajasthan.gov.in/content/environment/en/rajasthan-state-pollution-control-board/information/OnlineMonitoring.html",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "environment.rajasthan.gov.in"
+      ]
+    },
+    {
+      "id": "src-025",
+      "name": "https://erc.mp.gov.in/Documents/BEST_PRCS_N_HNDLNG_CEMS/PPT/3%20CEMS%20guidelines%20in%20India-%20Takeaway%20for%20equipment%20selection,%20suitability,%20correct%20implementation%20by%20J%20S%20Kamyotra,%20Ex-MS%20CPCB.pdf",
+      "url": "https://erc.mp.gov.in/Documents/BEST_PRCS_N_HNDLNG_CEMS/PPT/3%20CEMS%20guidelines%20in%20India-%20Takeaway%20for%20equipment%20selection,%20suitability,%20correct%20implementation%20by%20J%20S%20Kamyotra,%20Ex-MS%20CPCB.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "erc.mp.gov.in"
+      ]
+    },
+    {
+      "id": "src-026",
+      "name": "https://erc.mp.gov.in/Documents/doc/Letters_ro/OCEMS_Calibration_Protocol.PDF",
+      "url": "https://erc.mp.gov.in/Documents/doc/Letters_ro/OCEMS_Calibration_Protocol.PDF",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "erc.mp.gov.in"
+      ]
+    },
+    {
+      "id": "src-027",
+      "name": "https://hlkumarandassociates.com/notice-certification-of-cems-air-instruments/",
+      "url": "https://hlkumarandassociates.com/notice-certification-of-cems-air-instruments/",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "hlkumarandassociates.com"
+      ]
+    },
+    {
+      "id": "src-028",
+      "name": "https://insights.spans.co.in/cpcbs-latest-directive-for-ncr-delhi-industries-mandatory-ocems-and-ptz-camera-installation-by-december-31-2025",
+      "url": "https://insights.spans.co.in/cpcbs-latest-directive-for-ncr-delhi-industries-mandatory-ocems-and-ptz-camera-installation-by-december-31-2025",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "insights.spans.co.in"
+      ]
+    },
+    {
+      "id": "src-029",
+      "name": "https://legalupdate.qhsealert.com/file/319_OCEMS_Calibration_Procedures_Explained_in_CPCB_Guidelines.pdf",
+      "url": "https://legalupdate.qhsealert.com/file/319_OCEMS_Calibration_Procedures_Explained_in_CPCB_Guidelines.pdf",
+      "kind": "document",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "legalupdate.qhsealert.com"
+      ]
+    },
+    {
+      "id": "src-030",
+      "name": "https://legalupdate.qhsealert.com/new-ocems-portal-cpcb-mandatory-industry-registration/",
+      "url": "https://legalupdate.qhsealert.com/new-ocems-portal-cpcb-mandatory-industry-registration/",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "legalupdate.qhsealert.com"
+      ]
+    },
+    {
+      "id": "src-031",
+      "name": "https://legalupdate.qhsealert.com/ocems-calibration-procedures-explained-in-cpcb-guidelines/ OCEMS Calibration Procedures Explained in CPCB Guidelines",
+      "url": "https://legalupdate.qhsealert.com/ocems-calibration-procedures-explained-in-cpcb-guidelines/",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "legalupdate.qhsealert.com"
+      ]
+    },
+    {
+      "id": "src-032",
+      "name": "https://mpcb.gov.in/en/online-cems Maharashtra邦Guidelines for Online CEMS data submission",
+      "url": "https://mpcb.gov.in/en/online-cems",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "mpcb.gov.in"
+      ]
+    },
+    {
+      "id": "src-033",
+      "name": "The Alberta CEMS Code 2021 (effective Jan 1, 2022) and federal Multi-Sector Air Pollutants Regulations (MSAPR) govern the installation, certification, operation, and maintenance of Continuous Emission Monitoring Systems for measuring pollut",
+      "url": "https://open.alberta.ca/publications/continuous-emission-monitoring-system-cems-code",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "open.alberta.ca"
+      ]
+    },
+    {
+      "id": "src-034",
+      "name": "https://pab.emb.gov.ph/wp-content/uploads/2017/07/RA-8749-IRR-DAO-2000-81.pdf 尚未完成下載",
+      "url": "https://pab.emb.gov.ph/wp-content/uploads/2017/07/RA-8749-IRR-DAO-2000-81.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "pab.emb.gov.ph"
+      ]
+    },
+    {
+      "id": "src-035",
+      "name": "For further details, the CPCB OCEMS portal provides real-time data status and compliance metrics.",
+      "url": "https://ppcbcems.nic.in/public",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "ppcbcems.nic.in"
+      ]
+    },
+    {
+      "id": "src-036",
+      "name": "https://ptecologicalservices.com/understanding-cpcb-spcb-emission-guidelines-for-industries-in-india/",
+      "url": "https://ptecologicalservices.com/understanding-cpcb-spcb-emission-guidelines-for-industries-in-india/",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "ptecologicalservices.com"
+      ]
+    },
+    {
+      "id": "src-037",
+      "name": "https://r11.emb.gov.ph/wp-content/uploads/2025/07/FINAL-RSOBER-REPORT-PDF-2024.pdf",
+      "url": "https://r11.emb.gov.ph/wp-content/uploads/2025/07/FINAL-RSOBER-REPORT-PDF-2024.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "r11.emb.gov.ph"
+      ]
+    },
+    {
+      "id": "src-038",
+      "name": "https://rtdms.cpcb.gov.in/publicdata/#/l/public-data 監測數據查詢網站Central Repository Of OCEMS Data",
+      "url": "https://rtdms.cpcb.gov.in/publicdata/",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "rtdms.cpcb.gov.in"
+      ]
+    },
+    {
+      "id": "src-039",
+      "name": "https://rtdms.cpcb.gov.in/publicdata/#/l/public-data 監測數據查詢網站Central Repository Of OCEMS Data",
+      "url": "https://rtdms.cpcb.gov.in/publicdata/#/l/public-data",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "rtdms.cpcb.gov.in"
+      ]
+    },
+    {
+      "id": "src-040",
+      "name": "https://upccce.org/public/UPLOADS/REPOSITORY/DOC/38_CEMS%20v7%20(Pages)%20(1).pdf",
+      "url": "https://upccce.org/public/UPLOADS/REPOSITORY/DOC/38_CEMS%20v7%20(Pages",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "upccce.org"
+      ]
+    },
+    {
+      "id": "src-041",
+      "name": "https://upccce.org/public/UPLOADS/REPOSITORY/DOC/38_CEMS%20v7%20(Pages)%20(1).pdf",
+      "url": "https://upccce.org/public/UPLOADS/REPOSITORY/DOC/38_CEMS%20v7%20(Pages)%20(1).pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "upccce.org"
+      ]
+    },
+    {
+      "id": "src-042",
+      "name": "https://upccce.org/public/UPLOADS/REPOSITORY/DOC/39_CEMS%20Research%20Paper.pdf",
+      "url": "https://upccce.org/public/UPLOADS/REPOSITORY/DOC/39_CEMS%20Research%20Paper.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "upccce.org"
+      ]
+    },
+    {
+      "id": "src-043",
+      "name": "https://www.3ieimpact.org/evidence-hub/publications/impact-evaluations/continuous-emissions-monitoring-systems-cems-india",
+      "url": "https://www.3ieimpact.org/evidence-hub/publications/impact-evaluations/continuous-emissions-monitoring-systems-cems-india",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.3ieimpact.org"
+      ]
+    },
+    {
+      "id": "src-044",
+      "name": "https://www.alberta.ca/continuous-emission-monitoring-system-code",
+      "url": "https://www.alberta.ca/continuous-emission-monitoring-system-code",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.alberta.ca"
+      ]
+    },
+    {
+      "id": "src-045",
+      "name": "https://www.api.motion.ac.in/dconstrycti/E44747S/msintinciu/E915476S15/continuous__emissions-monitoring-systems_cems-field_audit_manual.pdf",
+      "url": "https://www.api.motion.ac.in/dconstrycti/E44747S/msintinciu/E915476S15/continuous__emissions-monitoring-systems_cems-field_audit_manual.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.api.motion.ac.in"
+      ]
+    },
+    {
+      "id": "src-046",
+      "name": "https://www.canada.ca/en/environment-climate-change/services/canadian-environmental-protection-act-registry/protocols-performance-specifications-monitoring-emissions-thermal-power-generation.html",
+      "url": "https://www.canada.ca/en/environment-climate-change/services/canadian-environmental-protection-act-registry/protocols-performance-specifications-monitoring-emissions-thermal-power-generation.html",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.canada.ca"
+      ]
+    },
+    {
+      "id": "src-047",
+      "name": "https://www.ccacoalition.org/resources/best-practices-cem-continuous-emission-monitoring",
+      "url": "https://www.ccacoalition.org/resources/best-practices-cem-continuous-emission-monitoring",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.ccacoalition.org"
+      ]
+    },
+    {
+      "id": "src-048",
+      "name": "https://www.ceew.in/blogs/gaps-and-reforms-to-scale-air-pollution-monitoring-with-continuous-emission-monitoring-systems-in-india",
+      "url": "https://www.ceew.in/blogs/gaps-and-reforms-to-scale-air-pollution-monitoring-with-continuous-emission-monitoring-systems-in-india",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.ceew.in"
+      ]
+    },
+    {
+      "id": "src-049",
+      "name": "https://www.ceew.in/publications/how-are-state-pollution-control-boards-addressing-workload-resources-and-financial-challenges-by-innovative-functional-practices",
+      "url": "https://www.ceew.in/publications/how-are-state-pollution-control-boards-addressing-workload-resources-and-financial-challenges-by-innovative-functional-practices",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.ceew.in"
+      ]
+    },
+    {
+      "id": "src-050",
+      "name": "https://www.ceew.in/sites/default/files/best-practices-for-continuous-carbon-emission-monitoring-systems-india.pdf",
+      "url": "https://www.ceew.in/sites/default/files/best-practices-for-continuous-carbon-emission-monitoring-systems-india.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.ceew.in"
+      ]
+    },
+    {
+      "id": "src-051",
+      "name": "https://www.ceew.in/sites/default/files/effectiveness-of-industrial-continuous-emission-monitoring-systems-and-state-ocems-portals-india.pdf",
+      "url": "https://www.ceew.in/sites/default/files/effectiveness-of-industrial-continuous-emission-monitoring-systems-and-state-ocems-portals-india.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.ceew.in"
+      ]
+    },
+    {
+      "id": "src-052",
+      "name": "https://www.cseindia.org/cems-certification-system-in-india-11141",
+      "url": "https://www.cseindia.org/cems-certification-system-in-india-11141",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.cseindia.org"
+      ]
+    },
+    {
+      "id": "src-053",
+      "name": "https://www.cseindia.org/cems-continuous-emission-monitoring-system-a-technical-guidance-manual-8113",
+      "url": "https://www.cseindia.org/cems-continuous-emission-monitoring-system-a-technical-guidance-manual-8113",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.cseindia.org"
+      ]
+    },
+    {
+      "id": "src-054",
+      "name": "https://www.cseindia.org/continuous-emission-monitoring-system-cems-6595",
+      "url": "https://www.cseindia.org/continuous-emission-monitoring-system-cems-6595",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.cseindia.org"
+      ]
+    },
+    {
+      "id": "src-055",
+      "name": "Australia’s CEMS code, primarily governed by state regulators like the WA Department of Water and Environmental Regulation, establishes strict requirements for designing, installing, certifying, and maintaining continuous emission monitorin",
+      "url": "https://www.der.wa.gov.au/about-us/monday-ads/item/6459-continuous-emission-monitoring-system-cems-code",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.der.wa.gov.au"
+      ]
+    },
+    {
+      "id": "src-056",
+      "name": "https://www.der.wa.gov.au/component/k2/item/6459-continuous-emission-monitoring-system-cems-code",
+      "url": "https://www.der.wa.gov.au/component/k2/item/6459-continuous-emission-monitoring-system-cems-code",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.der.wa.gov.au"
+      ]
+    },
+    {
+      "id": "src-057",
+      "name": "https://www.diligencecertification.com/cpcb-online-pollution-monitoring/?srsltid=AfmBOoq4V4i8Z7qb7T08Y9dkTai0esJqK0BUxQsZLDwyliDEeMENJud5",
+      "url": "https://www.diligencecertification.com/cpcb-online-pollution-monitoring/?srsltid=AfmBOoq4V4i8Z7qb7T08Y9dkTai0esJqK0BUxQsZLDwyliDEeMENJud5",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.diligencecertification.com"
+      ]
+    },
+    {
+      "id": "src-058",
+      "name": "Malaysia’s CEMS guidelines require industrial facilities to install, operate, and maintain Continuous Emission Monitoring Systems (CEMS) to monitor, record, and report real-time air pollutant emissions (e.g.,",
+      "url": "https://www.doe.gov.my/en/continuous-release-monitoring-system-cems/",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.doe.gov.my"
+      ]
+    },
+    {
+      "id": "src-059",
+      "name": ", CO, particulates) to the Department of Environment (DOE). These regulations, often guided by DOE-issued volumes, ensure compliance with the Environmental Quality Act (EQA).",
+      "url": "https://www.doe.gov.my/wp-content/uploads/2021/08/Volume-I-Guideline-for-the-Installation-Maintenance-of-Continuous-Emission-Monitoring-Systems-CEMS-Version-6.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.doe.gov.my"
+      ]
+    },
+    {
+      "id": "src-060",
+      "name": "https://www.doe.gov.my/wp-content/uploads/2022/03/Portal-DOE-March-2022-Guidelines-and-Criteria-for-Registered-Continuous-Emission-System-CEMS-Tester.pdf",
+      "url": "https://www.doe.gov.my/wp-content/uploads/2022/03/Portal-DOE-March-2022-Guidelines-and-Criteria-for-Registered-Continuous-Emission-System-CEMS-Tester.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.doe.gov.my"
+      ]
+    },
+    {
+      "id": "src-061",
+      "name": "https://www.downtoearth.org.in/pollution/big-win-csir-npl-launches-comprehensive-certification-for-continuous-emission-monitoring-systems-across-india",
+      "url": "https://www.downtoearth.org.in/pollution/big-win-csir-npl-launches-comprehensive-certification-for-continuous-emission-monitoring-systems-across-india",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.downtoearth.org.in"
+      ]
+    },
+    {
+      "id": "src-062",
+      "name": "https://www.envirotech-online.com/news/air-quality-monitoring/113/gasmet-technologies-uk-limited/EN17255%20explained/65533",
+      "url": "https://www.envirotech-online.com/news/air-quality-monitoring/113/gasmet-technologies-uk-limited/EN17255%20explained/65533",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.envirotech-online.com"
+      ]
+    },
+    {
+      "id": "src-063",
+      "name": "The EN 17255 series is a European standard framework (CEN/TC 264) that defines requirements for the performance, installation, and quality assurance of Data Acquisition and Handling Systems (DAHS) for monitoring stationary source emissions.",
+      "url": "https://www.google.com/search?q=CEN%2FTC+264&newwindow=1&sca_esv=9e963a6684c14a11&rlz=1C1CHZN_zh-TWTW964TW966&sxsrf=ANbL-n5_tva3ThL1MmKjPC8Y5Wr43d7IJg%3A1772076805250&ei=Bb-fad_9Dp3h1e8PjKuemQw&biw=1280&bih=631&ved=2ahUKEwiWl4fenPaSAxUggK8BHX75JHUQgK4QegQIARAC&uact=5&oq=EN+17255+series&gs_lp=Egxnd3Mtd2l6LXNlcnAiD0VOIDE3MjU1IHNlcmllczIIECEYoAEYwwQyCBAhGKABGMMESO8aUPsFWMsYcAF4AZABAJgBkQGgAYsEqgEDNS4xuAEDyAEA-AEBmAIHoAKxBMICChAAGLADGNYEGEfCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYBxgIGB7CAgYQABgIGB6YAwCIBgGQBgWSBwM2LjGgB9sMsgcDNS4xuAeoBMIHBTAuNC4zyAcXgAgA&sclient=gws-wiz-serp&mstk=AUtExfAVdvmsC7a1ubZx7Pw-NeeTrpjzg4rt69c5f6nTp_1wmrUGFMM7sxVkvLOCslSjYAi-hXaU3feIL7Kst7Qp2YJTCwHQCKlHORiPneNTayANVT7mWbwjsDsvBkjRMV9ndqfCKwLaSRRSARau5PN_8KCAWO2jaAx_F9aS9wfj6owVIJtHy1H42Fb2l2AclbzV6aLUiBoUHFU6yPpwzOOVX-Ufg0X5Xk7u-CCiAmqrnhGXbUbAKS4Y_d2PXGkJgxo_Q9EA7MjRozu5wd8-hsVte-_-&csui=3",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-064",
+      "name": "In India, the Central Pollution Control Board (CPCB) mandates Continuous Emission Monitoring Systems (CEMS) for 17 categories of highly polluting industries to report real-time emission data. The framework requires automated monitoring, dat",
+      "url": "https://www.google.com/search?q=Continuous+Emission+Monitoring+Systems&newwindow=1&sca_esv=835c64f8191b445a&rlz=1C1CHZN_zh-TWTW964TW966&biw=1280&bih=631&sxsrf=ANbL-n4CVxErg_KuLlbFEPVFN-CK5oYb8A%3A1773559421229&ei=fV62aeTKDeCkvr0P0ufy4AI&ved=2ahUKEwipgq-Py6GTAxWDdPUHHcSZFXEQgK4QegQIARAC&uact=5&oq=India+cems+code+continuous+emission+monitoring+system&gs_lp=Egxnd3Mtd2l6LXNlcnAiNUluZGlhIGNlbXMgY29kZSBjb250aW51b3VzIGVtaXNzaW9uIG1vbml0b3Jpbmcgc3lzdGVtMgUQABjvBTIFEAAY7wUyCBAAGKIEGIkFMgUQABjvBTIIEAAYgAQYogRItSVQAFjgHnABeAGQAQCYAXugAZoDqgEDMS4zuAEDyAEA-AEBmAIFoAKtA5gDAJIHAzIuM6AHsgyyBwMxLjO4B6wDwgcFMS4zLjHIBwuACAA&sclient=gws-wiz-serp",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-065",
+      "name": "Malaysia’s CEMS guidelines require industrial facilities to install, operate, and maintain Continuous Emission Monitoring Systems (CEMS) to monitor, record, and report real-time air pollutant emissions (e.g.,",
+      "url": "https://www.google.com/search?q=Continuous+Emission+Monitoring+Systems&newwindow=1&sca_esv=835c64f8191b445a&rlz=1C1CHZN_zh-TWTW964TW966&biw=1280&bih=631&sxsrf=ANbL-n7upp2aI9gz5V6do3wJM-nlka6DAg%3A1773305401163&ei=OX6yaa_RCcjAvr0Poeq98Qo&ved=2ahUKEwjpkoHbsZqTAxWJsVYBHUQQOP4QgK4QegQIARAC&uact=5&oq=Malaysia+cems+code+continuous+emission+monitoring+system&gs_lp=Egxnd3Mtd2l6LXNlcnAiOE1hbGF5c2lhIGNlbXMgY29kZSBjb250aW51b3VzIGVtaXNzaW9uIG1vbml0b3Jpbmcgc3lzdGVtMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMgUQABjvBTIFEAAY7wVI32xQAFi4VnAAeAGQAQCYAXSgAZQGqgEDNS4zuAEDyAEA-AEBmAIHoALRBZgDAJIHAzIuNaAHrhqyBwMyLjW4B9EFwgcDMC43yAcNgAgA&sclient=gws-wiz-serp&mstk=AUtExfBuBckJTFymhGnW-FA9jWDhJNw54eJOBXD0O3SwI_u_f4QojjpTEKu8NeE66VGjgMBKL98Q4ROl4V4jf_MIlwYZPrbN1lrJ1M-21KjBR7BM_XUE0Ue7ukw_xpB_BhC4kuUUQM0F5Twla2SqNv6n_n1ojgGqYo1p9HHZzwhhAOZ1HHc&csui=3",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-066",
+      "name": "DAO 2007-22 modifies and clarifies Section 5, Rule X of DAO 2000-81, ensuring stronger compliance with the Philippine Clean Air Act.",
+      "url": "https://www.google.com/search?q=DAO+2000-81&rlz=1C1CHZN_zh-TWTW964TW966&sourceid=chrome&ie=UTF-8&mstk=AUtExfBXFMFEpVIZ99FpCn4saLDlAE8nilEYhZ0qVNgJ2S6VeUotxizBoACc3ms8Ox_ViXdFYftKqGv-U8Y7qTkFjKv8MZx4wMs5sgVqY8AKTr8WzLE_3kUP-gSoW5igs1RT3w1L8S1u7Ug2DkH2RNiqjEiPr5ooPBeJmy4a6lnZYIgnO-8&csui=3&ved=2ahUKEwi-mOuwj8mTAxWkjVYBHY93Jk4QgK4QegQIBBAB",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-067",
+      "name": "DENR Administrative Order No. 2007-22 (DAO 2007-22) provides guidelines for the installation, operation, and maintenance of Continuous Emission Monitoring Systems (CEMS) and Continuous Opacity Monitoring Systems (COMS) in the Philippines. I",
+      "url": "https://www.google.com/search?q=DENR+Administrative+Order+No.+2007-22&rlz=1C1CHZN_zh-TWTW964TW966&sourceid=chrome&ie=UTF-8&mstk=AUtExfBXFMFEpVIZ99FpCn4saLDlAE8nilEYhZ0qVNgJ2S6VeUotxizBoACc3ms8Ox_ViXdFYftKqGv-U8Y7qTkFjKv8MZx4wMs5sgVqY8AKTr8WzLE_3kUP-gSoW5igs1RT3w1L8S1u7Ug2DkH2RNiqjEiPr5ooPBeJmy4a6lnZYIgnO-8&csui=3&ved=2ahUKEwi-mOuwj8mTAxWkjVYBHY93Jk4QgK4QegQIARAB",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-068",
+      "name": "EMB Memorandum Circular No. 2021-14 (EMB-MC-2021-14) establishes an Integrated Air Quality Network Center to monitor and repository real-time industrial emissions. It mandates industries required to have Continuous Emissions Monitoring Syst",
+      "url": "https://www.google.com/search?q=EMB+Memorandum+Circular+No.+2021-14&sca_esv=f968893c4a26525c&rlz=1C1CHZN_zh-TWTW964TW966&sxsrf=ANbL-n5YiNM5pEstKxeTvd13WHu7WSbTAQ%3A1774925606777&ei=JjfLaYK7LsP_1e8P88q4iAw&biw=1266&bih=634&ved=2ahUKEwihoq64kcmTAxWAdvUHHYzGFo0QgK4QegQIARAB&uact=5&oq=philippine+%28DAHS%29+%E2%80%93+MC+2021-14&gs_lp=Egxnd3Mtd2l6LXNlcnAiIHBoaWxpcHBpbmUgKERBSFMpIOKAkyBNQyAyMDIxLTE0MgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIwp8BUIcWWJyTAXABeAGQAQCYAW-gAawJqgEEMTAuM7gBA8gBAPgBAZgCDqAC0wnCAgoQABiwAxjWBBhHwgIIEAAYgAQYogSYAwCIBgGQBgKSBwQxMC40oAfRJ7IHAzkuNLgHzwnCBwQxLjEzyAcVgAgA&sclient=gws-wiz-serp&mstk=AUtExfDo0gsNkQ8AGwUzVhMD3Y0FVAlamVmN_P6oOeemdGbVe3eV4S8WT-Uzq8gE9202I_8Ik5OvGnCAqKfz3eqhnSrIpWdV5q9KAYd88LnfkHkODurxQWbXydpqEKL0iWwjfdBlPzmnuaaAyuTExKdxqu4WoDNdNUc917bXx1lSbWQnWxD5XDhwk65OLuTD_4CKDnW9&csui=3",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-069",
+      "name": "The EN 17255 series is a European standard framework (CEN/TC 264) that defines requirements for the performance, installation, and quality assurance of Data Acquisition and Handling Systems (DAHS) for monitoring stationary source emissions.",
+      "url": "https://www.google.com/search?q=EN+14181&newwindow=1&sca_esv=9e963a6684c14a11&rlz=1C1CHZN_zh-TWTW964TW966&sxsrf=ANbL-n5_tva3ThL1MmKjPC8Y5Wr43d7IJg%3A1772076805250&ei=Bb-fad_9Dp3h1e8PjKuemQw&biw=1280&bih=631&ved=2ahUKEwiWl4fenPaSAxUggK8BHX75JHUQgK4QegQIARAD&uact=5&oq=EN+17255+series&gs_lp=Egxnd3Mtd2l6LXNlcnAiD0VOIDE3MjU1IHNlcmllczIIECEYoAEYwwQyCBAhGKABGMMESO8aUPsFWMsYcAF4AZABAJgBkQGgAYsEqgEDNS4xuAEDyAEA-AEBmAIHoAKxBMICChAAGLADGNYEGEfCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYBxgIGB7CAgYQABgIGB6YAwCIBgGQBgWSBwM2LjGgB9sMsgcDNS4xuAeoBMIHBTAuNC4zyAcXgAgA&sclient=gws-wiz-serp&mstk=AUtExfAVdvmsC7a1ubZx7Pw-NeeTrpjzg4rt69c5f6nTp_1wmrUGFMM7sxVkvLOCslSjYAi-hXaU3feIL7Kst7Qp2YJTCwHQCKlHORiPneNTayANVT7mWbwjsDsvBkjRMV9ndqfCKwLaSRRSARau5PN_8KCAWO2jaAx_F9aS9wfj6owVIJtHy1H42Fb2l2AclbzV6aLUiBoUHFU6yPpwzOOVX-Ufg0X5Xk7u-CCiAmqrnhGXbUbAKS4Y_d2PXGkJgxo_Q9EA7MjRozu5wd8-hsVte-_-&csui=3",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-070",
+      "name": "EN 15267-1:2023：概述空氣品質監測設備 (AQME) 的認證通用原則，符合 EN ISO/IEC 17065。",
+      "url": "https://www.google.com/search?q=EN+15267-1%3A2023&rlz=1C1CHZN_zh-TWTW964TW966&oq=EN+15267+series&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTE4MzU4ajBqN6gCCLACAfEF4m2wqj80Sds&sourceid=chrome&ie=UTF-8&mstk=AUtExfDJC3JdtxEw1etNRU6GnEMFD1iYOnBfP5R4ACu2ygQVZW_t5WDOVHeNwFksUFIjD3vJPEXfGpSbUv_-lIgF5o5KfqJtm9_7wcHtt6US1ffdUtOP3V8EvEiCTRE3MoO3Tu2WQJD0Df4SbHYCJ4tDupbG6tKOZB12NEDHqHvUYIR7MLDH6tx8cmIC9Ot3IYMVRJL2MQCetWqlf-ql1mgUrcfUqLcHFeDaqaiilIRcaSpt2T70hgc0_g_xil4_ra8-EoYHBE9eBPJGUeTpIygY2PEh&csui=3&ved=2ahUKEwj43ovEnPaSAxVB2zQHHZpkB0kQgK4QegQIAxAB",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-071",
+      "name": "EN 15267-2:2023：規定製造商的品質管理體系 (QMS)、生產控制的初步評估以及對認證設備的持續監督。",
+      "url": "https://www.google.com/search?q=EN+15267-2%3A2023&rlz=1C1CHZN_zh-TWTW964TW966&oq=EN+15267+series&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTE4MzU4ajBqN6gCCLACAfEF4m2wqj80Sds&sourceid=chrome&ie=UTF-8&mstk=AUtExfDJC3JdtxEw1etNRU6GnEMFD1iYOnBfP5R4ACu2ygQVZW_t5WDOVHeNwFksUFIjD3vJPEXfGpSbUv_-lIgF5o5KfqJtm9_7wcHtt6US1ffdUtOP3V8EvEiCTRE3MoO3Tu2WQJD0Df4SbHYCJ4tDupbG6tKOZB12NEDHqHvUYIR7MLDH6tx8cmIC9Ot3IYMVRJL2MQCetWqlf-ql1mgUrcfUqLcHFeDaqaiilIRcaSpt2T70hgc0_g_xil4_ra8-EoYHBE9eBPJGUeTpIygY2PEh&csui=3&ved=2ahUKEwj43ovEnPaSAxVB2zQHHZpkB0kQgK4QegQIAxAD",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-072",
+      "name": "EN 15267-3:2023：定義固定源排放連續監測自動測量系統 (AMS) 的性能指標和測試程序。",
+      "url": "https://www.google.com/search?q=EN+15267-3%3A2023&rlz=1C1CHZN_zh-TWTW964TW966&oq=EN+15267+series&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTE4MzU4ajBqN6gCCLACAfEF4m2wqj80Sds&sourceid=chrome&ie=UTF-8&mstk=AUtExfDJC3JdtxEw1etNRU6GnEMFD1iYOnBfP5R4ACu2ygQVZW_t5WDOVHeNwFksUFIjD3vJPEXfGpSbUv_-lIgF5o5KfqJtm9_7wcHtt6US1ffdUtOP3V8EvEiCTRE3MoO3Tu2WQJD0Df4SbHYCJ4tDupbG6tKOZB12NEDHqHvUYIR7MLDH6tx8cmIC9Ot3IYMVRJL2MQCetWqlf-ql1mgUrcfUqLcHFeDaqaiilIRcaSpt2T70hgc0_g_xil4_ra8-EoYHBE9eBPJGUeTpIygY2PEh&csui=3&ved=2ahUKEwj43ovEnPaSAxVB2zQHHZpkB0kQgK4QegQIAxAF",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-073",
+      "name": "EN 15267-4:2023：規定用於固定源排放定期測量的便攜式自動測量系統 (P-AMS) 的性能指標。",
+      "url": "https://www.google.com/search?q=EN+15267-4%3A2023&rlz=1C1CHZN_zh-TWTW964TW966&oq=EN+15267+series&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTE4MzU4ajBqN6gCCLACAfEF4m2wqj80Sds&sourceid=chrome&ie=UTF-8&mstk=AUtExfDJC3JdtxEw1etNRU6GnEMFD1iYOnBfP5R4ACu2ygQVZW_t5WDOVHeNwFksUFIjD3vJPEXfGpSbUv_-lIgF5o5KfqJtm9_7wcHtt6US1ffdUtOP3V8EvEiCTRE3MoO3Tu2WQJD0Df4SbHYCJ4tDupbG6tKOZB12NEDHqHvUYIR7MLDH6tx8cmIC9Ot3IYMVRJL2MQCetWqlf-ql1mgUrcfUqLcHFeDaqaiilIRcaSpt2T70hgc0_g_xil4_ra8-EoYHBE9eBPJGUeTpIygY2PEh&csui=3&ved=2ahUKEwj43ovEnPaSAxVB2zQHHZpkB0kQgK4QegQIAxAH",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": false,
+      "download_on_change": false,
+      "tags": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": "src-074",
+      "name": "https://www.gov.uk/government/collections/monitoring-emissions-to-air-land-and-water-mcerts",
+      "url": "https://www.gov.uk/government/collections/monitoring-emissions-to-air-land-and-water-mcerts",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.gov.uk"
+      ]
+    },
+    {
+      "id": "src-075",
+      "name": "https://www.gov.uk/government/publications/m20-quality-assurance-of-continuous-emission-monitoring-systems Published 7 April 2014, Last updated 28 March 2025",
+      "url": "https://www.gov.uk/government/publications/m20-quality-assurance-of-continuous-emission-monitoring-systems",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.gov.uk"
+      ]
+    },
+    {
+      "id": "src-076",
+      "name": "https://www.gov.uk/government/publications/m20-quality-assurance-of-continuous-emission-monitoring-systems/monitoring-stack-emissions-quality-assurance-of-continuous-monitoring",
+      "url": "https://www.gov.uk/government/publications/m20-quality-assurance-of-continuous-emission-monitoring-systems/monitoring-stack-emissions-quality-assurance-of-continuous-monitoring",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.gov.uk"
+      ]
+    },
+    {
+      "id": "src-077",
+      "name": "https://www.gov.uk/government/publications/mcerts-for-stack-emissions-monitoring-equipment-at-industrial-installations",
+      "url": "https://www.gov.uk/government/publications/mcerts-for-stack-emissions-monitoring-equipment-at-industrial-installations",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.gov.uk"
+      ]
+    },
+    {
+      "id": "src-078",
+      "name": "https://www.gov.uk/guidance/monitoring-stack-emissions-standards-for-continuous-monitoring-and-sampling",
+      "url": "https://www.gov.uk/guidance/monitoring-stack-emissions-standards-for-continuous-monitoring-and-sampling",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.gov.uk"
+      ]
+    },
+    {
+      "id": "src-079",
+      "name": "https://www.maricopa.gov/2434/Title-V-Permit-Information",
+      "url": "https://www.maricopa.gov/2434/Title-V-Permit-Information",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.maricopa.gov"
+      ]
+    },
+    {
+      "id": "src-080",
+      "name": "https://www.pcapi-r4.org.ph/wp-content/uploads/2022/10/7.-RA8749_ENGR.-JUNDY-DEL-SOCORRO.pdf",
+      "url": "https://www.pcapi-r4.org.ph/wp-content/uploads/2022/10/7.-RA8749_ENGR.-JUNDY-DEL-SOCORRO.pdf",
+      "kind": "document",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.pcapi-r4.org.ph"
+      ]
+    },
+    {
+      "id": "src-081",
+      "name": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1813174 Status of Online Continuous Emission Monitoring System (OCEMS) as on 08.02.2026 截至2026年2月8日，線上連續排放監測系統（OCEMS）的狀態",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1813174",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.pib.gov.in"
+      ]
+    },
+    {
+      "id": "src-082",
+      "name": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1813174&reg=3&lang=2",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1813174&reg=3&lang=2",
+      "kind": "page",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.pib.gov.in"
+      ]
+    },
+    {
+      "id": "src-083",
+      "name": "https://www.sciencedirect.com/science/article/abs/pii/S030147972400570X",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S030147972400570X",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.sciencedirect.com"
+      ]
+    },
+    {
+      "id": "src-084",
+      "name": "https://www.simpliance.in/India/EHS/govt_notification/Rajasthan/office-order-regarding-new-ocems-portal-odams-developed-by-cpcb-7634  new OCEMS (ODAMS) Portal",
+      "url": "https://www.simpliance.in/India/EHS/govt_notification/Rajasthan/office-order-regarding-new-ocems-portal-odams-developed-by-cpcb-7634",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.simpliance.in"
+      ]
+    },
+    {
+      "id": "src-085",
+      "name": "https://www.sustainable-carbon.org/report/best-practices-in-cem-continuous-emission-monitoring/",
+      "url": "https://www.sustainable-carbon.org/report/best-practices-in-cem-continuous-emission-monitoring/",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.sustainable-carbon.org"
+      ]
+    },
+    {
+      "id": "src-086",
+      "name": "https://www.thesustainabilitycloud.com/blog/cpcb-ocems-directive-real-time-emission-data/ September 23, 2025 | CPCB Issues OCEMS Directive on Real-Time Emission Data",
+      "url": "https://www.thesustainabilitycloud.com/blog/cpcb-ocems-directive-real-time-emission-data/",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.thesustainabilitycloud.com"
+      ]
+    },
+    {
+      "id": "src-087",
+      "name": "https://www.thesustainabilitycloud.com/new-cpcb-ocems-portal-2025-compliance/ OCEMS永續雲",
+      "url": "https://www.thesustainabilitycloud.com/new-cpcb-ocems-portal-2025-compliance/",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.thesustainabilitycloud.com"
+      ]
+    },
+    {
+      "id": "src-088",
+      "name": "https://www.vdi.de/en/home/vdi-standards/details/vdi-ee-3952-stationary-source-emissions-predictive-emission-monitoring-systems-pems-basic-aspects-performance-testing-certification-and-application （PEMS）",
+      "url": "https://www.vdi.de/en/home/vdi-standards/details/vdi-ee-3952-stationary-source-emissions-predictive-emission-monitoring-systems-pems-basic-aspects-performance-testing-certification-and-application",
+      "kind": "page",
+      "priority": "review",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.vdi.de"
+      ]
+    },
+    {
+      "id": "src-089",
+      "name": "Data Acquisition and Handling: Requirements exist for data recording, resolution, and handling of calibration drift, to ensure accurate reporting of, for example, $SO_2$ and $NO_x$ levels.",
+      "url": "https://www.wa.gov.au/system/files/2023-05/continuous-emission-monitoring-system-code.pdf",
+      "kind": "document",
+      "priority": "official",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.wa.gov.au"
+      ]
+    },
+    {
+      "id": "src-090",
+      "name": "https://www.youtube.com/watch?v=YNkcqi5Nrd0",
+      "url": "https://www.youtube.com/watch?v=YNkcqi5Nrd0",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.youtube.com"
+      ]
+    },
+    {
+      "id": "src-091",
+      "name": "（纳尔）卷。 15 号2004 年 7 月 3-4 日 - 2004 年 9 月 [ DENR 行政命令编号2004-53，2004 年 8 月 31 日] 实施第 13 号共和国法案第 13 条税收优惠规定的指南。 8749 也称为 1999 年菲律宾清洁空气法案 第 1 节法律依据 这些实施指南是根据第 8749 号共和国法案第二章第 1 条第 13 节发布的，也称为“1999 年菲律宾清洁空气法案” ，以及 DAO 2000-81 规则 XXIII 的第 1 节，RA ",
+      "url": "https://www.zhiyanbao.cn/index/partFile/10/608/2022-01/10_127614.pdf",
+      "kind": "document",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.zhiyanbao.cn"
+      ]
+    },
+    {
+      "id": "src-092",
+      "name": "（纳尔）卷。 15 号2004 年 7 月 3-4 日 - 2004 年 9 月 [ DENR 行政命令编号2004-53，2004 年 8 月 31 日] 实施第 13 号共和国法案第 13 条税收优惠规定的指南。 8749 也称为 1999 年菲律宾清洁空气法案 第 1 节法律依据 这些实施指南是根据第 8749 号共和国法案第二章第 1 条第 13 节发布的，也称为“1999 年菲律宾清洁空气法案” ，以及 DAO 2000-81 规则 XXIII 的第 1 节，RA ",
+      "url": "https://www.zhiyanbao.cn/reportFile/full/pdf/10/608/2022-01/10_127614.pdf",
+      "kind": "document",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": true,
+      "tags": [
+        "www.zhiyanbao.cn"
+      ]
+    },
+    {
+      "id": "src-093",
+      "name": "报告地区:菲律宾",
+      "url": "https://www.zhiyanbao.cn/rgf/awk.html",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.zhiyanbao.cn"
+      ]
+    },
+    {
+      "id": "src-094",
+      "name": "相关行业:国家行政登记",
+      "url": "https://www.zhiyanbao.cn/rgf/laf.html",
+      "kind": "page",
+      "priority": "reference",
+      "enabled": true,
+      "download_on_change": false,
+      "tags": [
+        "www.zhiyanbao.cn"
+      ]
+    }
+  ]
+}

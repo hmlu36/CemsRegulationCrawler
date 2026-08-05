@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+.venv/
+*.pyc
+
+# 環境變數（含密碼，不可進版控）
+.env
+
+# Python
+__pycache__/
+.venv/
+*.pyc
+
+# IDE
+.vscode/

@@ -1,0 +1,42 @@
+name: CEMS regulation monitor
+
+on:
+  schedule:
+    # 每週一台北時間 09:00 (UTC 01:00)
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python monitor.py --config sources.json --root . --priority official --notify
+        env:
+          CEMS_WEBHOOK_URL: ${{ secrets.CEMS_WEBHOOK_URL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+      - name: 提交監測狀態與下載檔案
+        run: |
+          git config user.name "cems-monitor-bot"
+          git config user.email "cems-monitor-bot@users.noreply.github.com"
+          git add monitor_state.sqlite3 latest_report.md archive || true
+          git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
+          git push
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cems-monitor-report
+          path: latest_report.md
