@@ -20,6 +20,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python monitor.py --config sources.json --root . --priority official --notify
+        continue-on-error: true
         env:
           CEMS_WEBHOOK_URL: ${{ secrets.CEMS_WEBHOOK_URL }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -29,6 +30,7 @@ jobs:
           SMTP_FROM: ${{ secrets.SMTP_FROM }}
           SMTP_TO: ${{ secrets.SMTP_TO }}
       - name: 提交監測狀態與下載檔案
+        if: always()
         run: |
           git config user.name "cems-monitor-bot"
           git config user.email "cems-monitor-bot@users.noreply.github.com"

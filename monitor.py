@@ -307,7 +307,7 @@ def main() -> None:
     errors = sum(row.status == "error" for row in results)
     print(f"Checked {len(results)} sources; changed={changed}; errors={errors}")
     print(report)
-    return 2 if errors else 0
+    return 0  # 網路錯誤已記錄於報告，不視為流程失敗
 
 
 if __name__ == "__main__":
