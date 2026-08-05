@@ -1,4 +1,4 @@
-name: CEMS regulation monitor
+name: CemsRegulationCrawler
 
 on:
   schedule:
