@@ -43,9 +43,7 @@ jobs:
           git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
           git pull --rebase origin main
           git push
-      - name: 設定 Pages
-        uses: actions/configure-pages@v5
-      - name: 上傳 Pages
+      - name: 上傳 Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
