@@ -39,9 +39,8 @@ jobs:
         run: |
           git config user.name "cems-monitor-bot"
           git config user.email "cems-monitor-bot@users.noreply.github.com"
-          git stash
-          git pull origin main
-          git stash pop
+          git fetch origin main
+          git checkout origin/main -- monitor_state.sqlite3 latest_report.md archive/ 2>/dev/null || true
           git add monitor_state.sqlite3 latest_report.md index.html archive || true
           git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
           git push
