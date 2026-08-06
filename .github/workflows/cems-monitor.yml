@@ -37,10 +37,15 @@ jobs:
       - name: 提交監測狀態與下載檔案
         if: always()
         run: |
+          set -e
           git config user.name "cems-monitor-bot"
           git config user.email "cems-monitor-bot@users.noreply.github.com"
+          mkdir -p /tmp/cems-output
+          cp -a monitor_state.sqlite3 latest_report.md index.html /tmp/cems-output/
+          if [ -d archive ]; then cp -a archive /tmp/cems-output/; fi
           git fetch origin main
-          git checkout origin/main -- monitor_state.sqlite3 latest_report.md archive/ 2>/dev/null || true
+          git reset --hard origin/main
+          cp -a /tmp/cems-output/. .
           git add monitor_state.sqlite3 latest_report.md index.html archive || true
           git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
           git push
