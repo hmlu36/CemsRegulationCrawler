@@ -15,7 +15,8 @@
       "download_on_change": true,
       "tags": [
         "cdn.cseindia.org"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-002",
@@ -39,7 +40,8 @@
       "download_on_change": true,
       "tags": [
         "air.emb.gov.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-004",
@@ -51,7 +53,8 @@
       "download_on_change": true,
       "tags": [
         "air.emb.gov.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-005",
@@ -63,7 +66,8 @@
       "download_on_change": true,
       "tags": [
         "air.emb.gov.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-006",
@@ -123,7 +127,8 @@
       "download_on_change": true,
       "tags": [
         "cda.gov.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-011",
@@ -171,7 +176,8 @@
       "download_on_change": true,
       "tags": [
         "cleanairasia.org"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-015",
@@ -195,7 +201,8 @@
       "download_on_change": true,
       "tags": [
         "cpcb.nic.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-017",
@@ -255,7 +262,8 @@
       "download_on_change": true,
       "tags": [
         "ektimo.com.au"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-022",
@@ -267,7 +275,8 @@
       "download_on_change": true,
       "tags": [
         "environment.rajasthan.gov.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-023",
@@ -279,7 +288,8 @@
       "download_on_change": true,
       "tags": [
         "environment.rajasthan.gov.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-024",
@@ -303,7 +313,8 @@
       "download_on_change": true,
       "tags": [
         "erc.mp.gov.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-026",
@@ -315,7 +326,8 @@
       "download_on_change": true,
       "tags": [
         "erc.mp.gov.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-027",
@@ -351,7 +363,8 @@
       "download_on_change": true,
       "tags": [
         "legalupdate.qhsealert.com"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-030",
@@ -411,7 +424,8 @@
       "download_on_change": true,
       "tags": [
         "pab.emb.gov.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-035",
@@ -447,7 +461,8 @@
       "download_on_change": true,
       "tags": [
         "r11.emb.gov.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-038",
@@ -495,7 +510,8 @@
       "download_on_change": true,
       "tags": [
         "upccce.org"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-042",
@@ -507,7 +523,8 @@
       "download_on_change": true,
       "tags": [
         "upccce.org"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-043",
@@ -543,7 +560,8 @@
       "download_on_change": true,
       "tags": [
         "www.api.motion.ac.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-046",
@@ -603,7 +621,8 @@
       "download_on_change": true,
       "tags": [
         "www.ceew.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-051",
@@ -615,7 +634,8 @@
       "download_on_change": true,
       "tags": [
         "www.ceew.in"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-052",
@@ -711,7 +731,8 @@
       "download_on_change": true,
       "tags": [
         "www.doe.gov.my"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-060",
@@ -723,7 +744,8 @@
       "download_on_change": true,
       "tags": [
         "www.doe.gov.my"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-061",
@@ -963,7 +985,8 @@
       "download_on_change": true,
       "tags": [
         "www.pcapi-r4.org.ph"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-081",
@@ -1071,7 +1094,8 @@
       "download_on_change": true,
       "tags": [
         "www.wa.gov.au"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-090",
@@ -1095,7 +1119,8 @@
       "download_on_change": true,
       "tags": [
         "www.zhiyanbao.cn"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-092",
@@ -1107,7 +1132,8 @@
       "download_on_change": true,
       "tags": [
         "www.zhiyanbao.cn"
-      ]
+      ],
+      "download_on_first_seen": true
     },
     {
       "id": "src-093",
