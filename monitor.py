@@ -491,13 +491,13 @@ function renderTable() {{
         let snapHtml = "";
         if (r.snapshots.length > 0) {{
             const sid = r.id.replace(/[^a-zA-Z0-9]/g, "_");
-            snapHtml = '<span class="snap-toggle" onclick="toggleSnap(\\'' + sid + "\\')">📦 " + r.snap_count + " 個版本 ▸</span>";
+            snapHtml = '<span class="snap-toggle" onclick="toggleSnap(\'' + sid + '\')">\u{1F4E6} ' + r.snap_count + ' 個版本 \u25B8</span>';
             snapHtml += '<div class="snap-detail" id="snap_' + sid + '">';
             r.snapshots.forEach(s => {{
                 snapHtml += '<div class="snap-row"><span class="ts">' + esc(s.snapshot) + '</span>';
                 s.files.forEach(f => {{
                     const label = f.split("/").pop();
-                    snapHtml += '<a href="' + esc(f) + '" target="_blank" title="' + esc(f) + '">📄 ' + esc(label) + '</a> ';
+                    snapHtml += '<a href="' + esc(f) + '" target="_blank" title="' + esc(f) + '">\u{1F4C4} ' + esc(label) + '</a> ';
                 }});
                 if (s.meta && s.meta.sha256) {{
                     snapHtml += '<span style="color:#999;font-size:.72rem">SHA-256: ' + esc(s.meta.sha256.substring(0,16)) + '...</span>';
@@ -506,7 +506,7 @@ function renderTable() {{
             }});
             snapHtml += '</div>';
         }} else if (r.downloaded) {{
-            snapHtml = '<a href="' + esc(r.downloaded) + '" class="file-list">📄 下載</a>';
+            snapHtml = '<a href="' + esc(r.downloaded) + '" class="file-list">\u{1F4C4} 下載</a>';
         }} else {{
             snapHtml = '<span style="color:#aaa">—</span>';
         }}
