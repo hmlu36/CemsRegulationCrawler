@@ -206,7 +206,7 @@ class Monitor:
                 new_links = sorted(set(links) - old_links)
                 changed = changed or bool(new_links)
             downloaded = None
-            if (is_first and source.get("download_on_first_seen")) or (
+            if is_first or (
                 changed and source.get("download_on_change", is_document)
             ):
                 downloaded = self.archive_bytes(source, response.content, response)
