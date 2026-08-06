@@ -8,10 +8,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,6 +43,15 @@ jobs:
           git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
           git pull --rebase origin main
           git push
+      - name: 設定 Pages
+        uses: actions/configure-pages@v5
+      - name: 上傳 Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: 部署到 GitHub Pages
+        uses: actions/deploy-pages@v4
+        id: deployment
       - uses: actions/upload-artifact@v4
         if: always()
         with:
