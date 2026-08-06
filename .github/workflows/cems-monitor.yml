@@ -8,10 +8,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,9 +39,18 @@ jobs:
         run: |
           git config user.name "cems-monitor-bot"
           git config user.email "cems-monitor-bot@users.noreply.github.com"
-          git add monitor_state.sqlite3 latest_report.md archive || true
+          git add monitor_state.sqlite3 latest_report.md index.html archive || true
           git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
           git push
+      - name: 設定 GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: 上傳 Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
       - uses: actions/upload-artifact@v4
         if: always()
         with:
