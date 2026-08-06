@@ -41,6 +41,7 @@ jobs:
           git config user.email "cems-monitor-bot@users.noreply.github.com"
           git add monitor_state.sqlite3 latest_report.md index.html archive || true
           git diff --cached --quiet || git commit -m "📊 更新 CEMS 法規監測狀態"
+          git pull --rebase origin main
           git push
       - name: 設定 GitHub Pages
         uses: actions/configure-pages@v5
