@@ -491,7 +491,7 @@ function renderTable() {{
         let snapHtml = "";
         if (r.snapshots.length > 0) {{
             const sid = r.id.replace(/[^a-zA-Z0-9]/g, "_");
-            snapHtml = '<span class="snap-toggle" onclick="toggleSnap(\'' + sid + '\')">[PACK] ' + r.snap_count + ' 個版本 ▶</span>';
+            snapHtml = '<span class="snap-toggle" onclick="toggleSnap(\\'' + sid + '\\')">[PACK] ' + r.snap_count + ' 個版本 ▶</span>';
             snapHtml += '<div class="snap-detail" id="snap_' + sid + '">';
             r.snapshots.forEach(s => {{
                 snapHtml += '<div class="snap-row"><span class="ts">' + esc(s.snapshot) + '</span>';
