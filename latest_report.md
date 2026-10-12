@@ -1,11 +1,12 @@
 # CEMS 法規網址監測報告
 
-- 產生時間：2026-10-05T06:26:39+00:00
-- 變更：1；首次建立基準：0；未變更：20；錯誤：12
+- 產生時間：2026-10-12T06:48:28+00:00
+- 變更：2；首次建立基準：0；未變更：19；錯誤：12
 
 | 狀態 | 名稱 | HTTP | 說明 |
 |---|---|---:|---|
 | 有變更 | [https://cpcb.nic.in/ocems-complete/ 印度中央官方OCEMS Information](https://cpcb.nic.in/ocems-complete/) | 200 | CPCB ／ Central Pollution Control Board |
+| 有變更 | [Malaysia’s CEMS guidelines require industrial facilities to install, operate, and maintain](https://www.doe.gov.my/en/continuous-release-monitoring-system-cems/) | 200 | Continuous Emissions Monitoring System (CEMS) - Department of Environment |
 | 錯誤 | [https://air.emb.gov.ph/laws-policies-for-air-quality-management/](https://air.emb.gov.ph/laws-policies-for-air-quality-management/) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/laws-policies-for-air-quality-management/ |
 | 錯誤 | [https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf 尚未完成下載](https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf |
 | 錯誤 | [https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may20](https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may2016-2.pdf) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may2016-2.pdf |
@@ -22,16 +23,15 @@
 | 無變更 | [https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime](https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime-and-magnesium-oxide) | 200 | Production of Cement, Lime and Magnesium Oxide ／ EU-BRITE |
 | 無變更 | [https://cda.gov.ph/wp-content/uploads/2021/11/MC-2021-14-OG.pdf](https://cda.gov.ph/wp-content/uploads/2021/11/MC-2021-14-OG.pdf) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf](https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf) | 304 | 伺服器回覆未變更 |
-| 無變更 | [https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installat](https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installation%20of%20ocems.pdf) | 200 | https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installation%20of%20ocems.pdf |
-| 無變更 | [https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guideli](https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS_02.08.2017.pdf) | 200 | https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS_02.08.2017.pdf |
+| 無變更 | [https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installat](https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installation%20of%20ocems.pdf) | 304 | 伺服器回覆未變更 |
+| 無變更 | [https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guideli](https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS_02.08.2017.pdf) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://environment.rajasthan.gov.in/content/environment/en/rajasthan-state-pollution-cont](https://environment.rajasthan.gov.in/content/environment/en/rajasthan-state-pollution-control-board/information/OnlineMonitoring.html) | 200 | Online Monitoring |
 | 無變更 | [https://erc.mp.gov.in/Documents/BEST_PRCS_N_HNDLNG_CEMS/PPT/3%20CEMS%20guidelines%20in%20I](https://erc.mp.gov.in/Documents/BEST_PRCS_N_HNDLNG_CEMS/PPT/3%20CEMS%20guidelines%20in%20India-%20Takeaway%20for%20equipment%20selection,%20suitability,%20correct%20implementation%20by%20J%20S%20Kamyotra,%20Ex-MS%20CPCB.pdf) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://erc.mp.gov.in/Documents/doc/Letters_ro/OCEMS_Calibration_Protocol.PDF](https://erc.mp.gov.in/Documents/doc/Letters_ro/OCEMS_Calibration_Protocol.PDF) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://mpcb.gov.in/en/online-cems Maharashtra邦Guidelines for Online CEMS data submission](https://mpcb.gov.in/en/online-cems) | 200 | Guidelines for Online CEMS data submission ／ Maharashtra Pollution Control Board |
-| 無變更 | [For further details, the CPCB OCEMS portal provides real-time data status and compliance m](https://ppcbcems.nic.in/public) | 200 | Online Emission and Effluent Monitoring System |
+| 無變更 | [For further details, the CPCB OCEMS portal provides real-time data status and compliance m](https://ppcbcems.nic.in/public) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://rtdms.cpcb.gov.in/publicdata/#/l/public-data 監測數據查詢網站Central Repository Of OCEMS D](https://rtdms.cpcb.gov.in/publicdata/) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://rtdms.cpcb.gov.in/publicdata/#/l/public-data 監測數據查詢網站Central Repository Of OCEMS D](https://rtdms.cpcb.gov.in/publicdata/#/l/public-data) | 304 | 伺服器回覆未變更 |
-| 無變更 | [Malaysia’s CEMS guidelines require industrial facilities to install, operate, and maintain](https://www.doe.gov.my/en/continuous-release-monitoring-system-cems/) | 200 | Continuous Emissions Monitoring System (CEMS) - Department of Environment |
 | 無變更 | [, CO, particulates) to the Department of Environment (DOE). These regulations, often guide](https://www.doe.gov.my/wp-content/uploads/2021/08/Volume-I-Guideline-for-the-Installation-Maintenance-of-Continuous-Emission-Monitoring-Systems-CEMS-Version-6.pdf) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://www.doe.gov.my/wp-content/uploads/2022/03/Portal-DOE-March-2022-Guidelines-and-Cri](https://www.doe.gov.my/wp-content/uploads/2022/03/Portal-DOE-March-2022-Guidelines-and-Criteria-for-Registered-Continuous-Emission-System-CEMS-Tester.pdf) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://www.maricopa.gov/2434/Title-V-Permit-Information](https://www.maricopa.gov/2434/Title-V-Permit-Information) | 200 | Title V Permit Information ／ Maricopa County, AZ |
