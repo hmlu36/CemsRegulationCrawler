@@ -1,18 +1,20 @@
 # CEMS 法規網址監測報告
 
-- 產生時間：2026-11-09T07:29:30+00:00
-- 變更：1；首次建立基準：0；未變更：15；錯誤：17
+- 產生時間：2026-11-16T07:30:44+00:00
+- 變更：0；首次建立基準：0；未變更：13；錯誤：20
 
 | 狀態 | 名稱 | HTTP | 說明 |
 |---|---|---:|---|
-| 有變更 | [https://cpcb.nic.in/ocems-complete/ 印度中央官方OCEMS Information](https://cpcb.nic.in/ocems-complete/) | 200 | CPCB ／ Central Pollution Control Board |
 | 錯誤 | [https://air.emb.gov.ph/laws-policies-for-air-quality-management/](https://air.emb.gov.ph/laws-policies-for-air-quality-management/) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/laws-policies-for-air-quality-management/ |
 | 錯誤 | [https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf 尚未完成下載](https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/wp-content/uploads/2016/04/dao-2007-22_724.pdf |
 | 錯誤 | [https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may20](https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may2016-2.pdf) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/wp-content/uploads/2016/05/DAO-CEMS-COM-Test-Audit-Firm-Accre-may2016-2.pdf |
 | 錯誤 | [https://air.emb.gov.ph/wp-content/uploads/2021/11/EMB-MC-2021-14-Signed.pdf 尚未完成下載](https://air.emb.gov.ph/wp-content/uploads/2021/11/EMB-MC-2021-14-Signed.pdf) |  | HTTPError: 403 Client Error: Forbidden for url: https://air.emb.gov.ph/wp-content/uploads/2021/11/EMB-MC-2021-14-Signed.pdf |
 | 錯誤 | [https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/monitoring-emissions-a](https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/monitoring-emissions-air-and-water-ied-installations-0) |  | ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) |
-| 錯誤 | [https://cems-legacy.doe.gov.my/cems_consultant/](https://cems-legacy.doe.gov.my/cems_consultant/) |  | ConnectTimeout: HTTPSConnectionPool(host='cems-legacy.doe.gov.my', port=443): Max retries exceeded with url: /cems_consultant/ (Caused by ConnectTimeoutError(<HTTPSConnection(host= |
+| 錯誤 | [https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime](https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime-and-magnesium-oxide) |  | ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) |
+| 錯誤 | [https://cems-legacy.doe.gov.my/cems_consultant/](https://cems-legacy.doe.gov.my/cems_consultant/) |  | ConnectionError: HTTPSConnectionPool(host='cems-legacy.doe.gov.my', port=443): Max retries exceeded with url: /cems_consultant/ (Caused by NewConnectionError("HTTPSConnection(host= |
 | 錯誤 | [https://cems.cpcb.gov.in/](https://cems.cpcb.gov.in/) |  | ConnectTimeout: HTTPSConnectionPool(host='cems.cpcb.gov.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cems.cpcb.gov.in', po |
+| 錯誤 | [https://cpcb.nic.in/ocems-complete/ 印度中央官方OCEMS Information](https://cpcb.nic.in/ocems-complete/) |  | ConnectTimeout: HTTPSConnectionPool(host='cpcb.nic.in', port=443): Max retries exceeded with url: /ocems-complete/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='cpcb.nic.in |
+| 錯誤 | [https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf](https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf) |  | ConnectTimeout: HTTPSConnectionPool(host='cpcb.nic.in', port=443): Max retries exceeded with url: /upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf (Caused by ConnectTime |
 | 錯誤 | [https://dpcccems.nic.in/public 德黑里監測情形](https://dpcccems.nic.in/public) |  | SSLError: HTTPSConnectionPool(host='dpcccems.nic.in', port=443): Max retries exceeded with url: /public (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FA |
 | 錯誤 | [https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installat](https://environment.rajasthan.gov.in/content/dam/environment/RPCB/Office%20Order/installation%20of%20ocems.pdf) |  | ConnectTimeout: HTTPSConnectionPool(host='environment.rajasthan.gov.in', port=443): Max retries exceeded with url: /content/dam/environment/RPCB/Office%20Order/installation%20of%20 |
 | 錯誤 | [https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guideli](https://environment.rajasthan.gov.in/content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS_02.08.2017.pdf) |  | ConnectTimeout: HTTPSConnectionPool(host='environment.rajasthan.gov.in', port=443): Max retries exceeded with url: /content/dam/environment/RPCB/OnlineMonitoring/Guidelines_on_CEMS |
@@ -24,9 +26,7 @@
 | 錯誤 | [Australia’s CEMS code, primarily governed by state regulators like the WA Department of Wa](https://www.der.wa.gov.au/about-us/monday-ads/item/6459-continuous-emission-monitoring-system-cems-code) |  | HTTPError: 403 Client Error: Forbidden for url: https://www.der.wa.gov.au/about-us/monday-ads/item/6459-continuous-emission-monitoring-system-cems-code |
 | 錯誤 | [https://www.der.wa.gov.au/component/k2/item/6459-continuous-emission-monitoring-system-cem](https://www.der.wa.gov.au/component/k2/item/6459-continuous-emission-monitoring-system-cems-code) |  | HTTPError: 403 Client Error: Forbidden for url: https://www.der.wa.gov.au/component/k2/item/6459-continuous-emission-monitoring-system-cems-code |
 | 無變更 | [https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/ferrous-metals-process](https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/ferrous-metals-processing-industry) | 200 | Ferrous Metals Processing Industry ／ EU-BRITE |
-| 無變更 | [https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime](https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/production-cement-lime-and-magnesium-oxide) | 200 | Production of Cement, Lime and Magnesium Oxide ／ EU-BRITE |
 | 無變更 | [https://cda.gov.ph/wp-content/uploads/2021/11/MC-2021-14-OG.pdf](https://cda.gov.ph/wp-content/uploads/2021/11/MC-2021-14-OG.pdf) | 304 | 伺服器回覆未變更 |
-| 無變更 | [https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf](https://cpcb.nic.in/upload/thrust-area/revised-ocems-guidelines-29.08.2018.pdf) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://mpcb.gov.in/en/online-cems Maharashtra邦Guidelines for Online CEMS data submission](https://mpcb.gov.in/en/online-cems) | 200 | Guidelines for Online CEMS data submission ／ Maharashtra Pollution Control Board |
 | 無變更 | [For further details, the CPCB OCEMS portal provides real-time data status and compliance m](https://ppcbcems.nic.in/public) | 304 | 伺服器回覆未變更 |
 | 無變更 | [https://rtdms.cpcb.gov.in/publicdata/#/l/public-data 監測數據查詢網站Central Repository Of OCEMS D](https://rtdms.cpcb.gov.in/publicdata/) | 304 | 伺服器回覆未變更 |
